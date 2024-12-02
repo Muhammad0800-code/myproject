@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Instagram Video">
+    <meta property="og:description" content="🎥 Смотреть видео на Instagram">
+    <meta property="og:image" content=""> 
+    <meta property="og:url" content="https://yourdomain.com/index.html">
+    <meta property="og:type" content="video">
+    <title>Instagram Video</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fafafa; /* Внешний белый фон */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 360px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #000; /* Черный фон внутри контейнера */
+        }
+        .video {
+            background-color: #000; /* Черный фон под изображением */
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .video img {
+            max-width: 80%; /* Уменьшаем размер изображения */
+            max-height: 80%; /* Подгоняем под размер контейнера */
+        }
+        .video::before {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 80px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/a/ac/White_play_icon.svg') no-repeat center;
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .caption {
+            padding: 10px;
+            background: #fff;
+            color: #333;
+        }
+        .caption p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        .caption a {
+            color: #007aff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video">
+            <img src="myimage.jpg" alt="Instagram Video"> <!-- Ваше изображение -->
+        </div>
+        <div class="caption">
+            <p>Чтобы посмотреть видео, войдите в аккаунт Instagram. <a href="login.html">Войти</a></p>
+        </div>
+    </div>
+</body>
+</html>
